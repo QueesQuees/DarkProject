@@ -66,7 +66,6 @@ const Content: React.FC = () => {
   const navigateDetails = () => {
     navigate(POST);
   };
-  console.log('content 64');
   const viewDataHome = DataHome.map((item, index) => (
     <View key={index}>
       {/* head of the post */}

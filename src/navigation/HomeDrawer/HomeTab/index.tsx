@@ -5,7 +5,9 @@ import {FontAwesomeIcon} from '@fortawesome/react-native-fontawesome';
 import HomeScreen from '../../../screens/Home';
 import Search from '../../../screens/Search';
 import MyPosts from '../../../screens/MyPost';
-import {faHome, faSearch, faUserAstronaut} from '@fortawesome/free-solid-svg-icons';
+import Market from '../../../screens/Market';
+
+import {faHome, faSearch, faStore, faUserAstronaut} from '@fortawesome/free-solid-svg-icons';
 
 const Tab = createBottomTabNavigator();
 const HomeTab: React.FC = () => {
@@ -24,6 +26,13 @@ const HomeTab: React.FC = () => {
         options={{
           tabBarLabel: '',
           tabBarIcon: () => <FontAwesomeIcon icon={faSearch} />,
+        }}
+      />
+      <Tab.Screen
+        name="Market"
+        component={Market}
+        options={{
+          tabBarIcon: () => <FontAwesomeIcon icon={faStore} />,
         }}
       />
       <Tab.Screen

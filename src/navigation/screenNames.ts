@@ -6,3 +6,4 @@ export const PROFILE = 'Profile';
 export const SEARCH = 'Search';
 export const SETTING = 'Setting';
 export const MY_POSTS = 'MyPosts';
+export const MARKET = 'Market';
