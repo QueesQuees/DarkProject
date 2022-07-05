@@ -6,7 +6,8 @@ import {faTimes, faUserCog, faUserNinja} from '@fortawesome/free-solid-svg-icons
 
 import styles from './index.styles';
 import {faQuestionCircle} from '@fortawesome/free-regular-svg-icons';
-import {openDrawer} from '../../navigation/rootNavigation';
+import {navigate, openDrawer} from '../../navigation/rootNavigation';
+import {LOGIN} from '../../navigation/screenNames';
 
 const Header = () => {
   const [showMore, setShowMore] = useState(false);
@@ -67,7 +68,7 @@ const Header = () => {
                 </>
               ) : (
                 <>
-                  <TouchableOpacity style={styles.btn}>
+                  <TouchableOpacity style={styles.btn} onPress={() => navigate(LOGIN)}>
                     <Text>Login</Text>
                   </TouchableOpacity>
                 </>
