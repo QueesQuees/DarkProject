@@ -6,7 +6,7 @@ const styles = StyleSheet.create({
     opacity: 1,
   },
   content: {
-    height: 300,
+    height: 400,
     marginHorizontal: 20,
     borderRadius: 20,
   },
@@ -23,7 +23,7 @@ const styles = StyleSheet.create({
     borderRadius: 20,
   },
   TitleTextLogin: {
-    fontSize: 20,
+    fontSize: 24,
     fontWeight: 'bold',
   },
   red: {color: 'red'},
@@ -49,7 +49,7 @@ const styles = StyleSheet.create({
     color: '#ffffff',
   },
   textSignupRed: {
-    color: 'red',
+    color: '#63C7B2',
   },
 });
 

@@ -8,4 +8,4 @@ export const SETTING = 'Setting';
 export const MY_POSTS = 'MyPosts';
 export const MARKET = 'Market';
 export const LOGIN = 'Login';
-export const SING_UP = 'SingUp';
+export const SIGN_UP = 'SignUp';

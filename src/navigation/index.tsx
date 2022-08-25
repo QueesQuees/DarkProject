@@ -12,7 +12,7 @@ import {
   MY_POSTS,
   MARKET,
   LOGIN,
-  SING_UP,
+  SIGN_UP,
 } from './screenNames';
 import Home from '../screens/Home';
 import Post from '../screens/Post';
@@ -23,7 +23,8 @@ import Setting from '../screens/Setting';
 import MyPosts from '../screens/MyPost';
 import Market from '../screens/Market';
 import Login from '../screens/Login';
-import SignUp from '../screens/Login/SingUp/singUp';
+// import SignUp from '../screens/Login/SingUp';
+import SignUp from '../screens/Login/SingUp';
 
 export type RootStackParamList = {
   HomeDrawer: undefined;
@@ -35,7 +36,7 @@ export type RootStackParamList = {
   [MY_POSTS]: undefined;
   [MARKET]: undefined;
   [LOGIN]: undefined;
-  [SING_UP]: undefined;
+  [SIGN_UP]: undefined;
 };
 
 const Stack = createNativeStackNavigator<RootStackParamList>();
@@ -61,7 +62,7 @@ const Navigation: React.FC<NavigationProps> = ({initialRouteName}) => {
         <Stack.Screen name={MY_POSTS} component={MyPosts} />
         <Stack.Screen name={MARKET} component={Market} />
         <Stack.Screen name={LOGIN} component={Login} />
-        <Stack.Screen name={SING_UP} component={SignUp} />
+        <Stack.Screen name={SIGN_UP} component={SignUp} />
       </Stack.Navigator>
     </NavigationContainer>
   );
